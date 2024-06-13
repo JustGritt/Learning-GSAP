@@ -15,10 +15,11 @@ console.log("GSAP Loaded!")
 let featureTimeline = gsap.timeline({
     scrollTrigger: {
         trigger: '#features-section',
-        start: 'center center',
+        start: 'top top',
         end: '+=2000',
         scrub: 1,
         pin: true,
+        markers: true,
         snap: {
             snapTo: 'labels',
             duration: { min: 0.2, max: 3 },
@@ -27,6 +28,8 @@ let featureTimeline = gsap.timeline({
     }
 });
 
-featureTimeline.from('#features-text', { y: 100, opacity: 0 })
+featureTimeline
+    .from('#features-text', { y: 100, opacity: 0 })
+    .from('#features-tabs', { y: 100, opacity: 0 }, '<0.2')
     .fromTo('.feature-card', { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: 'power1.inOut', stagger: 0.5 })
     .addLabel("end-card")
