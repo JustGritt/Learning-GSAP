@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // ====================
 
 gsap.registerPlugin(ScrollTrigger);
-console.log("GSAP Loaded!")
 
 // ====================
 // Scroll triggers - Feature section
@@ -34,8 +33,7 @@ tabClasses.forEach((tabClass, index) => {
             start: 'top top',
             end: `${(index) * 2000}`,
             onLeave: () => changeTab(tabClass),
-            onEnterBack: () => changeTab(tabClass),
-            markers: true
+            onEnterBack: () => changeTab(tabClass)
         }
     });
 });
