@@ -94,10 +94,10 @@
 
 			<!-- Features -->
 			<section id="features-section" class="border-t p-8" data-lag="0.2">
-				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-7xl h-screen px-6 flex flex-col">
 					<div id="features-text" class="mt-8 text-center">
 						<span id="features-label"
-							class="feature-content scale-0 py-2 px-4 bg-violet-100 rounded-full text-md font-semibold text-primary text-center">
+							class="feature-content scale-0 py-2 px-4 bg-purple-100 rounded-full text-md font-semibold text-primary text-center">
 							✨ Products
 						</span>
 						<h2 id="features-title"
@@ -106,43 +106,168 @@
 						</h2>
 					</div>
 
-
-
-					<div id="features-tabs" class="w-fit font-medium text-center text-gray-500 mx-auto my-4">
+					<div id="features-tabs" class="w-fit font-medium text-center text-gray-500 mx-auto">
 						<ul class="flex flex-wrap -mb-px justify-center items-center">
 							<li>
-								<a href="#" class="bg-violet-800 text-white inline-block px-6 py-2 rounded-s">
+								<a href="#packaging" class="tab1 bg-purple-100 inline-block px-6 py-3 hover:bg-purple-800 hover:text-white transition-colors duration-300 rounded-s-full">
 									Packaging
 								</a>
 							</li>
 							<li>
-								<a href="#" class="bg-violet-100 inline-block px-6 py-2 hover:bg-violet-800 hover:text-white transition-colors duration-300">
+								<a href="#design" class="tab2 bg-purple-100 inline-block px-6 py-3 hover:bg-purple-800 hover:text-white transition-colors duration-300">
 									Design
 								</a>
 							</li>
 							<li>
-								<a href="#" class="bg-violet-100 inline-block px-6 py-2 hover:bg-violet-800 hover:text-white transition-colors duration-300">
+								<a href="#collaborate" class="tab3 bg-purple-100 inline-block px-6 py-3 hover:bg-purple-800 hover:text-white transition-colors duration-300">
 									Collaborate
 								</a>
 							</li>
 							<li>
-								<a href="#" class="bg-violet-100 inline-block px-6 py-2 hover:bg-violet-800 hover:text-white transition-colors duration-300">
+								<a href="#shipping" class="tab4 bg-purple-100 inline-block px-6 py-3 hover:bg-purple-800 hover:text-white transition-colors duration-300">
 									Shipping
 								</a>
 							</li>
 							<li>
-								<a href="#" class="bg-violet-100 inline-block px-6 py-2 hover:bg-violet-800 hover:text-white transition-colors duration-300 rounded-e">
+								<a href="#tracking" class="tab5 bg-purple-100 inline-block px-6 py-3 hover:bg-purple-800 hover:text-white transition-colors duration-300 rounded-e-full">
 									Tracking
 								</a>
 							</li>
 						</ul>
 					</div>
 
-
-					<div class="bg-red-600 flex justify-center items-center flex-wrap h-[66svh] rounded">
-						<img src="/src/image-1.jpg" alt="" height="400">
-						<img src="/src/image-1.jpg" alt="" height="400">
-					</div>
+					<section id="features-carousel" class="relative flex justify-center items-center flex-wrap h-[66svh] rounded mt-12 overflow-hidden">
+						<div id="packaging" class="feature-carousel-item hidden absolute flex-wrap justify-center items-baseline h-full w-full gap-8">
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-1.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Premium packaging for your products
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-2.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Fully customizable designs
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-3.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Made with the best materials
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-4.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Natural and sustainable packaging
+								</h3>
+							</article>
+						</div>
+						<div id="design" class="feature-carousel-item hidden absolute flex-wrap justify-center items-baseline h-full w-full gap-8">
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-5.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									More than 1000 designs to choose from
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-6.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									From minimal to extravagant designs
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-7.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									We can create custom designs for you
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-8.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Test our designs for free
+								</h3>
+							</article>
+						</div>
+						<div id="collaborate" class="feature-carousel-item hidden absolute flex-wrap justify-center items-baseline h-full w-full gap-8">
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-8.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Available for collaboration with your team
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-3.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									We can work with your designers
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-5.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Provide feedback and suggestions
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-7.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Nominate your own designers
+								</h3>
+							</article>
+						</div>
+						<div id="shipping" class="feature-carousel-item hidden absolute flex-wrap justify-center items-baseline h-full w-full gap-8">
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-2.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									We ship worldwide
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-4.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Free shipping for orders over $100
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-6.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Express shipping available for all orders
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-8.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Shipping insurance available for all orders
+								</h3>
+							</article>
+						</div>
+						<div id="tracking" class="feature-carousel-item hidden absolute flex-wrap justify-center items-baseline h-full w-full gap-8">
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-1.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Track your order in real-time
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-5.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Receive notifications on your order
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-3.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Track your order on our website
+								</h3>
+							</article>
+							<article class="flex justify-center items-center flex-col max-w-[400px]">
+								<img class="feature-item" src="/assets/image-7.jpg" alt="carousel-item" height="200">
+								<h3 class="mt-2 text-xl font-bold">
+									Monitor your order on our app
+								</h3>
+							</article>
+						</div>
+					</section>
 				</div>
 			</section>
 

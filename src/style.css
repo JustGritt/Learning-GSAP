@@ -44,3 +44,16 @@
     transform: translateY(calc(-308px * 6));
   }
 }
+
+.feature-item {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tab-active {
+  background: #6b21a8;
+  color: #fff;
+  font-weight: bold;
+}
